@@ -1,4 +1,4 @@
 # Tools
-- React + Vite
+- React
 - Tailwind CSS
 
