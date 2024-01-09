@@ -10,41 +10,41 @@ const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Women western",
+    title: "Product Name 1",
     rating: 5.0,
-    color: "white",
+    color: "Color 1",
     aosDelay: "0",
   },
   {
     id: 2,
     img: Img2,
-    title: "Printed T-Shirt",
+    title: "Product Name 2",
     rating: 4.5,
-    color: "White",
+    color: "Color 2",
     aosDelay: "200",
   },
   {
     id: 3,
     img: Img3,
-    title: "Printed T-Shirt",
+    title: "Product Name 3",
     rating: 4.7,
-    color: "White",
+    color: "Color 3",
     aosDelay: "400",
   },
   {
     id: 4,
     img: Img4,
-    title: "T-Shirt",
+    title: "Product Name 4",
     rating: 4.4,
-    color: "White",
+    color: "Color 4",
     aosDelay: "600",
   },
   {
     id: 5,
     img: Img5,
-    title: "Printed T-Shirt",
+    title: "Product Name 5",
     rating: 4.5,
-    color: "Blue",
+    color: "Color 5",
     aosDelay: "800",
   },
 ];
@@ -56,7 +56,7 @@ const Products = () => {
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
           <p data-aos="fade-up" className="text-sm text-primary">Top Selling Products for you</p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">Products</h1>
+          <h1 data-aos="fade-up" className="text-3xl font-bold">Best Selling</h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eius
             magnam recusandae

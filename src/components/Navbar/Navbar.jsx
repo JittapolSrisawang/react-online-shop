@@ -24,17 +24,17 @@ const Menu = [
 const DropdownLinks = [
   {
     id: 1,
-    name: "Men",
+    name: "For Men",
     link: "/#",
   },
   {
     id: 2,
-    name: "Women",
+    name: "For Women",
     link: "/#",
   },
   {
     id: 3,
-    name: "Kids",
+    name: "For Kids",
     link: "/#",
   },
 ];
