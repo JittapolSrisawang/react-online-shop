@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import TopProducts from "./components/TopProducts/TopProducts";
 import Footer from './components/Footer/Footer'
 import Banner from "./components/Banner/Banner";
+import Subscribe from "./components/Subscribe/Subscribe";
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
       <Products />
       <TopProducts />
       <Banner />
+      <Subscribe />
       <Footer />
     </div>
   );
