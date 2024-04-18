@@ -2,7 +2,10 @@
 - React
 - Tailwind CSS
 
-ดูตัวอย่างผลลัพธ์ได้ที่ : [Live Demo]
 
+<<<<<<< HEAD
 [Live Demo]:
 
+=======
+[Live Demo]:https://online-shop-website-js.netlify.app/
+>>>>>>> a3aec630f1f72f8c844157b4f67c5894ae4b9967
