@@ -8,23 +8,20 @@ const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 40% off on all Men's Wear",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit vel esse alias animi dicta dolorem, tempora optio. Quae ipsa quaerat perspiciatis dolorum iste. Consectetur nulla quidem laborum velit iusto nemo!",
+    title: "เสื้อผ้าผู้ชาย ลดสูงสุด 40%",
+    description: "จัดส่งฟรี เมื่อซื้อสินค้าครบ 2,000 บาท",
   },
   {
     id: 2,
     img: Image2,
-    title: "Upto 50% off on all Women's Wear",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est provident, libero laudantium inventore deserunt voluptas? Corporis corrupti dolorem omnis vero. Porro ratione, vero quis illo architecto aut inventore. Explicabo, dignissimos?",
+    title: "เสื้อผ้าผู้หญิง ลดสูงสุด 50%",
+    description: "จัดส่งฟรี เมื่อซื้อสินค้าครบ 2,000 บาท",
   },
   {
     id: 3,
     img: Image3,
-    title: "Upto 30% off on all Kid's Wear",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum illum ab error in voluptatibus ipsum? Pariatur harum veritatis vitae, dolorem libero cupiditate quos? Ipsum libero dolorum deleniti dolorem laudantium veniam.",
+    title: "เสื้อผ้าเด็ก ลดสูงสุด 60%",
+    description: "จัดส่งฟรี เมื่อซื้อสินค้าครบ 2,000 บาท",
   },
 ];
 
@@ -76,7 +73,7 @@ const Hero = () => {
                     data-aos-delay="300"
                   >
                     <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
-                      Order Now
+                      ช้อปเลย
                     </button>
                   </div>
                 </div>

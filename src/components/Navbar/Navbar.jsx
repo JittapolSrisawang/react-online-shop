@@ -6,35 +6,35 @@ import { FaCaretDown } from "react-icons/fa";
 const Menu = [
   {
     id: 1,
-    name: "Home",
-    link: "/#",
+    name: "หน้าหลัก",
+    link: "/",
   },
   {
     id: 2,
-    name: "Best Selling",
-    link: "/#",
+    name: "สินค้าใหม่",
+    link: "#newproduct",
   },
   {
     id: 3,
-    name: "Top Rated",
-    link: "/#",
+    name: "สินค้าขายดี",
+    link: "#bestseller",
   },
 ];
 
 const DropdownLinks = [
   {
     id: 1,
-    name: "For Men",
+    name: "ผู้ชาย",
     link: "/#",
   },
   {
     id: 2,
-    name: "For Women",
+    name: "ผู้หญิง",
     link: "/#",
   },
   {
     id: 3,
-    name: "For Kids",
+    name: "เด็ก",
     link: "/#",
   },
 ];
@@ -48,7 +48,7 @@ const Navbar = () => {
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={Logo} alt="Logo" className="w-10" />
-              Shoppy
+              Online Shop
             </a>
           </div>
           {/* search bar */}
@@ -56,7 +56,7 @@ const Navbar = () => {
             <div className="relative group hidden sm:block">
               <input
                 type="text"
-                placeholder="search"
+                placeholder="ค้นหา"
                 className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300  rounded-full border border-gray-300 px-2 py-1 focus: outline-none focus:border-1 focus:border-primary"
               />
               <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
@@ -67,7 +67,7 @@ const Navbar = () => {
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
-                Order
+                สินค้าในรถเข็น
               </span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
@@ -90,7 +90,7 @@ const Navbar = () => {
           {/* Simple Dropdown and Links */}
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
-              Products
+              สินค้า
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
               </span>
@@ -99,7 +99,12 @@ const Navbar = () => {
               <ul>
                 {DropdownLinks.map((data) => (
                   <li key={data.id}>
-                    <a href={data.link} className="inline-block w-full rounded-md p-2 hover:bg-primary/20">{data.name}</a>
+                    <a
+                      href={data.link}
+                      className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                    >
+                      {data.name}
+                    </a>
                   </li>
                 ))}
               </ul>

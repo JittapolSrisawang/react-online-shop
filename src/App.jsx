@@ -2,10 +2,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
 import AOS from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import TopProducts from "./components/TopProducts/TopProducts";
-import Footer from './components/Footer/Footer'
+import Footer from "./components/Footer/Footer";
 import Banner from "./components/Banner/Banner";
 import Subscribe from "./components/Subscribe/Subscribe";
 
@@ -18,7 +18,7 @@ const App = () => {
       delay: 100,
     });
     AOS.refresh();
-  },[])
+  }, []);
 
   return (
     <div>

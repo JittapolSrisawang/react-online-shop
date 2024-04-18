@@ -10,41 +10,41 @@ const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Product Name 1",
+    title: "เสื้อเชิ้ต แขนยาว",
     rating: 5.0,
-    color: "Color 1",
+    color: "White",
     aosDelay: "0",
   },
   {
     id: 2,
     img: Img2,
-    title: "Product Name 2",
+    title: "เสื้อยืด COTTON คอกลม แขนสั้น สกรีนลาย",
     rating: 4.5,
-    color: "Color 2",
+    color: "White",
     aosDelay: "200",
   },
   {
     id: 3,
     img: Img3,
-    title: "Product Name 3",
+    title: "เสื้อยืด COTTON คอกลม แขนสั้น สกรีนลาย",
     rating: 4.7,
-    color: "Color 3",
+    color: "White",
     aosDelay: "400",
   },
   {
     id: 4,
     img: Img4,
-    title: "Product Name 4",
+    title: "เสื้อยืด COTTON คอกลม แขนสั้น",
     rating: 4.4,
-    color: "Color 4",
+    color: "White",
     aosDelay: "600",
   },
   {
     id: 5,
     img: Img5,
-    title: "Product Name 5",
+    title: "เสื้อยืด COTTON คอกลม แขนสั้น สกรีนลาย",
     rating: 4.5,
-    color: "Color 5",
+    color: "Blue",
     aosDelay: "800",
   },
 ];
@@ -52,15 +52,12 @@ const ProductsData = [
 const Products = () => {
   return (
     <div className="mt-14 mb-12">
-      <div className="container">
+      <div className="container" id="newproduct">
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
-          <p data-aos="fade-up" className="text-sm text-primary">Top Selling Products for you</p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">Best Selling</h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eius
-            magnam recusandae
-          </p>
+          <h1 data-aos="fade-up" className="text-3xl font-bold ">
+            สินค้าใหม่
+          </h1>
         </div>
         {/* Body Saction */}
         <div>

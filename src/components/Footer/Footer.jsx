@@ -5,7 +5,6 @@ import {
   FaFacebook,
   FaInstagram,
   FaTiktok,
-  FaLine,
   FaLocationArrow,
   FaMobileAlt,
 } from "react-icons/fa";
@@ -21,39 +20,39 @@ const BannerImg = {
 
 const FooterLinks = [
   {
-    title: "Home",
-    link: "/#",
+    title: "ข้อมูลเพิ่มเติม",
+    link: "/",
   },
   {
-    title: "About",
-    link: "/#about",
+    title: "ที่ตั้งสาขา",
+    link: "/",
   },
   {
-    title: "Contact",
-    link: "/#contact",
+    title: "ร่วมงานกับเรา",
+    link: "/",
   },
   {
-    title: "Blog",
-    link: "/#blog",
+    title: "ข่าวสาร",
+    link: "/",
   },
 ];
 
 const FooterLinks2 = [
   {
-    title: "Link 1",
-    link: "/#",
+    title: "คำถามที่พบบ่อย",
+    link: "/",
   },
   {
-    title: "Link 2",
-    link: "/#",
+    title: "การคืนสินค้า",
+    link: "/",
   },
   {
-    title: "Link 3",
-    link: "/#",
+    title: "นโยบายความเป็นส่วนตัว",
+    link: "/",
   },
   {
-    title: "Link 4",
-    link: "/#",
+    title: "การเข้าใช้บริการเว็บไซต์",
+    link: "/",
   },
 ];
 
@@ -62,16 +61,12 @@ const Footer = () => {
     <div style={BannerImg} className="text-white mt-20">
       <div className="container">
         <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
-          {/* company details */}
+          {/* Company Logo */}
           <div className="py-8 px-4">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
               <img src={footerLogo} alt="" className="max-w-[50px]" />
-              Shopsy
+              <a href="/">Online Shop</a>
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusantium recusandae autem
-            </p>
           </div>
 
           {/* Footer Links */}
@@ -79,7 +74,7 @@ const Footer = () => {
             <div>
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Important Links
+                  เกี่ยวกับเรา
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
@@ -96,7 +91,7 @@ const Footer = () => {
             <div>
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Links
+                  ช่วยเหลือ
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {FooterLinks2.map((link) => (
@@ -115,23 +110,32 @@ const Footer = () => {
 
             <div>
               <div className="flex items-center gap-3 mt-6">
-                <a href="#">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaInstagram className="text-3xl" />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaFacebook className="text-3xl" />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.tiktok.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaTiktok className="text-3xl" />
-                </a>
-                <a href="#">
-                  <FaLine className="text-3xl" />
                 </a>
               </div>
               <div className="mt-6">
                 <div className="flex items-center gap-3">
                   <FaLocationArrow />
-                  <p>Bangkok, Thailand</p>
+                  <p>กรุงเทพ, ประเทศไทย</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />

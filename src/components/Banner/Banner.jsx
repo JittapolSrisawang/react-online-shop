@@ -16,13 +16,13 @@ const Banner = () => {
           {/* Detail Section */}
           <div className="flex flex-col justify-center gap-6 sm:pt-0">
             <h1 data-aos="fade-up" className="text-3xl sm:text-4xl font-bold">
-              Summer Sale upto 50% Off
+              ลดกระหน่ำต้อนรับ Summer ลดสูงสุดถึง 60%
             </h1>
-            <p  data-aos="fade-up" className="text-sm text-gray-500 tracking-wide leading-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
-              laborum modi, eius at debitis ducimus mollitia, quas libero, omnis
-              eaque repudiandae. Ullam quam impedit non laudantium quis vitae
-              deleniti deserunt.
+            <p
+              data-aos="fade-up"
+              className="text-sm text-gray-500 tracking-wide leading-5"
+            >
+              จัดส่งฟรี เมื่อซื้อสินค้าครบ 2,000 บาท
             </p>
           </div>
         </div>

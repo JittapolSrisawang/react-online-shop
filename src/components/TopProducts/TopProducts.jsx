@@ -8,49 +8,42 @@ const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Product A",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "เสื้อเชิ้ต ผู้หญิง",
+    description: "เสื้อเชิ้ต แขนยาว สีเหลือง สำหรับผู้หญิง",
   },
   {
     id: 2,
     img: Img2,
-    title: "Product B",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "เสื้อเชิ้ต ผู้ชาย",
+    description: "เสื้อเชิ้ต แขนยาว สีแดง สำหรับผู้ชาย",
   },
   {
     id: 3,
     img: Img3,
-    title: "Product C",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "เสื้อเชิ้ต เด็กผู้ชาย",
+    description: "เสื้อเชิ้ต แขนสั้น สีฟ้า สำหรับเด็กผู้ชาย",
   },
 ];
 
 const TopProducts = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container" id="bestseller">
         {/* Header Section */}
         <div className="text-left mb-24">
-          <p data-aos="fade-up" className="text-sm text-primary">
-            Top Rated Products for you
-          </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Top Rated
+            สินค้าขายดี
           </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo ex
-            perferendis fuga odit, aliquam explicabo
-          </p>
         </div>
         {/* Body Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
           {ProductsData.map((data) => (
-            <div data-aos='zoom-in' className="rounded-2xl bg-white hover:bg-black/80 hover:text-white relative shadow-xl duration-300 group max-w-[300px]">
+            <div
+              data-aos="zoom-in"
+              className="rounded-2xl bg-white hover:bg-black/80 hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
+            >
               {/* Image Section   */}
-              <div className="h-[50px]">
+              <div className="h-[50px] mt-8">
                 <img
                   src={data.img}
                   alt=""
@@ -70,11 +63,8 @@ const TopProducts = () => {
                 <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                   {data.description}
                 </p>
-                <button
-                  className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary"
-                  // onClick={handleOrderPopup}
-                >
-                  Order Now
+                <button className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary">
+                  เพิ่มลงรถเข็น
                 </button>
               </div>
             </div>
